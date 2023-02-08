@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(180, 180, 180);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    background:rgb(210, 210, 210);
+    
+    width: 450px;
+    height: 385px;
+    margin-top: 10px;
+    margin-left: 400px;
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 1px 1px black;
+
+}
+.container{
+    background:rgb(45, 45, 45);
+    width: 410px;
+    height: 350px;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 1px 1px #000;
+    /* border-radius: 30px ; */
+    
+   
+    margin: 15px auto;
+}
+#input{
+    background: #c6aea1;
+    width: 290px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 70px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #f00;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: rgb(210, 210, 210);
+
+}
+button{
+    background:rgb(180, 180, 180) ;
+    width: 100px;
+    height:50px;
+    margin-top: 25px;
+    margin-left: 75px ;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow:0px -2px 3px 0px #fff,0px 2px 3px 0px #000;
+
+}
+#missyou{
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ed872d;
+    text-align: center;
+}
+h1{
+    color: #000;
+    font-weight: bold;    
+    font-size: 100px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+h2{
+    font-size: 50px;
+    color: hsl(0, 100%, 25%);
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+h3{
+    color: #fff;
+    font-weight: bold;
+    margin-left: 78px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+ </style>
+</head>
+<body>
+
+    <h1>Assignment Of JavaScript</h1>
+<div class="wrapper">
+    <div class="container">
+        <h3>Enter ASCII Table No</h3>
+    
+        <input type="number" id="input" placeholder=" Type No">
+        <br>
+        <button onclick="creat()">Enter</button>
+        <button onclick="reset()">Reset</button>
+        <h1 id="missyou"></h1>
+    </div>
+</div>
+<h2>Developer By:Shah Nawaz Unar</h2>
+<script>
+    function creat(){
+    let select = document.getElementById("input").value
+    math.form(select)
+}
+    function reset(){
+        document.getElementById("input").value =""  
+        document.getElementById("missyou").innerHTML = "";     
+}
+let math = {
+    form: function(select){
+        if(select==65){
+            document.getElementById("missyou").innerHTML="A"
+        }
+        else if(select==66){
+            document.getElementById("missyou").innerHTML="B"
+        }
+        else if(select==67){
+            document.getElementById("missyou").innerHTML="C"
+        }
+        else if(select==68){
+            document.getElementById("missyou").innerHTML="D"
+        }
+        else if(select==69){
+            document.getElementById("missyou").innerHTML="E"
+        }
+        else if(select==70){
+            document.getElementById("missyou").innerHTML="F"
+        }
+        else if(select==71){
+            document.getElementById("missyou").innerHTML="G"
+        }
+        else if(select==72){
+            document.getElementById("missyou").innerHTML="H"
+        }
+        else if(select==73){
+            document.getElementById("missyou").innerHTML="I"
+        }
+        else if(select==74){
+            document.getElementById("missyou").innerHTML="J"
+        }
+        else if(select==75){
+            document.getElementById("missyou").innerHTML="K"
+        }
+        else if(select==76){
+            document.getElementById("missyou").innerHTML="L"
+        }
+        else if(select==77){
+            document.getElementById("missyou").innerHTML="M"
+        }
+        else if(select==78){
+            document.getElementById("missyou").innerHTML="N"
+        }
+        else if(select==79){
+            document.getElementById("missyou").innerHTML="O"
+        }
+        else if(select==80){
+            document.getElementById("missyou").innerHTML="P"
+        }
+        else if(select==81){
+            document.getElementById("missyou").innerHTML="Q"
+        }
+        else if(select==82){
+            document.getElementById("missyou").innerHTML="R"
+        }
+        else if(select==83){
+            document.getElementById("missyou").innerHTML="S"
+        }
+        else if(select==84){
+            document.getElementById("missyou").innerHTML="T"
+        }
+        else if(select==85){
+            document.getElementById("missyou").innerHTML="U"
+        }
+        else if(select==86){
+            document.getElementById("missyou").innerHTML="V"
+        }
+        else if(select==87){
+            document.getElementById("missyou").innerHTML="W"
+        }
+        else if(select==88){
+            document.getElementById("missyou").innerHTML="X"
+        }
+        else if(select==89){
+            document.getElementById("missyou").innerHTML="Y"
+        }
+        else if(select==90){
+            document.getElementById("missyou").innerHTML="Z"
+        }
+        else {
+            document.getElementById("missyou").innerHTML="It Is Invalid Number "
+        }
+    }   
+}
+</script>
+</body>
+</html>
